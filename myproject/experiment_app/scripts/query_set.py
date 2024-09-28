@@ -16,14 +16,8 @@ def c_print(*args, **kwargs):
     print("\n", end="")
 
 def run():
-    new_blog = Blog.objects.create(name="Beatles Blog", tagline="All the latest Beatles news.")
-    c_print(new_blog)
-    
-    
-    
-    
-    
-    
+    if Entry.objects.filter(headline="Test"):
+        print("There is at least one Entry with the headline Test")
     
     
     
